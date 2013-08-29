@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.14'
+gem 'rails', '4.0.0'
 gem 'mysql2'
 gem 'pdfkit'
 gem 'wkhtmltopdf-binary'
@@ -10,7 +10,7 @@ gem 'newrelic_rpm'
 gem 'whenever', :require => false
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder'
 
 group :assets do
   gem 'sass-rails'
