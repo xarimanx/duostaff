@@ -11,6 +11,7 @@ gem 'whenever', :require => false
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
+gem 'dalli'
 
 group :assets do
   gem 'sass-rails'
