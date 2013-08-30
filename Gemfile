@@ -9,15 +9,14 @@ gem 'unicorn'
 gem 'newrelic_rpm'
 gem 'whenever', :require => false
 gem 'jquery-rails'
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
 gem 'turbolinks'
 gem 'jbuilder'
 gem 'dalli'
+gem 'anjlab-bootstrap-rails', '>= 3.0.0.0', :require => 'bootstrap-rails'
 
-group :assets do
-  gem 'sass-rails'
-  gem 'uglifier'
-  gem 'coffee-rails'
-end
 
 group :development do
   gem 'capistrano'
