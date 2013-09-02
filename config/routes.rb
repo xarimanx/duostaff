@@ -53,5 +53,9 @@ Duostaff::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  get :welcome ,controller: :welcome, action: :main
+  get :about ,controller: :welcome, action: :main
+  get :contacts ,controller: :welcome, action: :main
+
   root 'welcome#main'
 end

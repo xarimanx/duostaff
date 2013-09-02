@@ -21,15 +21,21 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand{:href => "#"} Project name
+          %a.navbar-brand{:href => welcome_path } DuoStaff
         .collapse.navbar-collapse
           %ul.nav.navbar-nav
             %li.active
-              %a{:href => "#"} Home
+              %a{:href => welcome_path } Main
             %li
-              %a{:href => "#about"} About
+              %a{:href => about_path } About
             %li
-              %a{:href => "#contact"} Contact
+              %a{:href => "#"} Foto
+            %li
+              %a{:href => "#"} Video
+            %li
+              %a{:href => "#"} FAQ
+            %li
+              %a{:href => "#"} Raider
         / /.nav-collapse
       / /.container
     / /.navbar
@@ -40,23 +46,17 @@
             %ul.nav
               %li Sidebar
               %li.active
-                %a{:href => "#"} Link
+                %a{:href => welcome_path } Main
               %li
-                %a{:href => "#"} Link
+                %a{:href => about_path } About
               %li
-                %a{:href => "#"} Link
-              %li Sidebar
+                %a{:href => "#"} Foto
               %li
-                %a{:href => "#"} Link
+                %a{:href => "#"} Video
               %li
-                %a{:href => "#"} Link
+                %a{:href => "#"} FAQ
               %li
-                %a{:href => "#"} Link
-              %li Sidebar
-              %li
-                %a{:href => "#"} Link
-              %li
-                %a{:href => "#"} Link
+                %a{:href => "#"} Raider
           / /.well
         / /span
         .col-xs-12.col-sm-9
