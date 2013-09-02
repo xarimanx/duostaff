@@ -10,8 +10,8 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
     /[if lt IE 9]
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
+      = javascript_include_tag "html5shiv"
+      = javascript_include_tag "respond.min"
     = csrf_meta_tags
   %body{:style => ""}
     .navbar.navbar-fixed-top.navbar-inverse{:role => "navigation"}
@@ -34,9 +34,33 @@
       / /.container
     / /.navbar
     .container
-      .row.row-offcanvas.row-offcanvas-right
+      .row.row-offcanvas.row-offcanvas-left
+        #sidebar.col-xs-6.col-sm-3.sidebar-offcanvas{:role => "navigation"}
+          .well.sidebar-nav
+            %ul.nav
+              %li Sidebar
+              %li.active
+                %a{:href => "#"} Link
+              %li
+                %a{:href => "#"} Link
+              %li
+                %a{:href => "#"} Link
+              %li Sidebar
+              %li
+                %a{:href => "#"} Link
+              %li
+                %a{:href => "#"} Link
+              %li
+                %a{:href => "#"} Link
+              %li Sidebar
+              %li
+                %a{:href => "#"} Link
+              %li
+                %a{:href => "#"} Link
+          / /.well
+        / /span
         .col-xs-12.col-sm-9
-          %p.pull-right.visible-xs
+          %p.pull-left.visible-xs
             %button.btn.btn-primary.btn-xs{"data-toggle" => "offcanvas", :type => "button"} Toggle nav
           .jumbotron
             %h1 Hello, world!
@@ -79,30 +103,6 @@
                 %a.btn.btn-default{:href => "#"} View details »
             / /span
           / /row
-        / /span
-        #sidebar.col-xs-6.col-sm-3.sidebar-offcanvas{:role => "navigation"}
-          .well.sidebar-nav
-            %ul.nav
-              %li Sidebar
-              %li.active
-                %a{:href => "#"} Link
-              %li
-                %a{:href => "#"} Link
-              %li
-                %a{:href => "#"} Link
-              %li Sidebar
-              %li
-                %a{:href => "#"} Link
-              %li
-                %a{:href => "#"} Link
-              %li
-                %a{:href => "#"} Link
-              %li Sidebar
-              %li
-                %a{:href => "#"} Link
-              %li
-                %a{:href => "#"} Link
-          / /.well
         / /span
       / /row
       %hr/
