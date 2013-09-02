@@ -54,8 +54,9 @@ Duostaff::Application.routes.draw do
   #     resources :products
   #   end
   get :welcome ,controller: :welcome, action: :main
-  get :about ,controller: :welcome, action: :main
-  get :contacts ,controller: :welcome, action: :main
+  get :about ,controller: :welcome, action: :about
+  get :contacts ,controller: :welcome, action: :contacts
+  get :faq ,controller: :welcome, action: :faq
 
   root 'welcome#main'
 end

@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require twitter/bootstrap
 //= require offcanvas
+//= require plugins/faq
 //= require_tree .
