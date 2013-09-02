@@ -1,11 +1,19 @@
-!!!
-%html
+%html{:lang => "en"}
   %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "", :name => "author"}/
+    %link{:href => "../../assets/ico/favicon.png", :rel => "shortcut icon"}/
     %title Duostaff
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
+    / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    /[if lt IE 9]
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
     = csrf_meta_tags
-  %body
+  %body{:style => ""}
     .navbar.navbar-fixed-top.navbar-inverse{:role => "navigation"}
       .container
         .navbar-header
@@ -26,7 +34,6 @@
       / /.container
     / /.navbar
     .container
-      = yield
       .row.row-offcanvas.row-offcanvas-right
         .col-xs-12.col-sm-9
           %p.pull-right.visible-xs
