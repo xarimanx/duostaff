@@ -10,8 +10,8 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
     /[if lt IE 9]
-      = javascript_include_tag "html5shiv"
-      = javascript_include_tag "respond.min"
+      = javascript_include_tag "plugins/html5shiv"
+      = javascript_include_tag "plugins/respond.min"
     = csrf_meta_tags
   %body{:style => ""}
     .navbar.navbar-fixed-top.navbar-inverse{:role => "navigation"}
@@ -33,7 +33,7 @@
             %li
               %a{:href => "#"} Video
             %li
-              %a{:href => "#"} FAQ
+              %a{:href => faq_path } FAQ
             %li
               %a{:href => "#"} Raider
         / /.nav-collapse
@@ -54,7 +54,7 @@
               %li
                 %a{:href => "#"} Video
               %li
-                %a{:href => "#"} FAQ
+                %a{:href => faq_path } FAQ
               %li
                 %a{:href => "#"} Raider
           / /.well
@@ -65,44 +65,7 @@
           .jumbotron
             %h1 Hello, world!
             %p This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.
-          .row
-            .col-6.col-sm-6.col-lg-4
-              %h2 Heading
-              %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-              %p
-                %a.btn.btn-default{:href => "#"} View details »
-            / /span
-            .col-6.col-sm-6.col-lg-4
-              %h2 Heading
-              %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-              %p
-                %a.btn.btn-default{:href => "#"} View details »
-            / /span
-            .col-6.col-sm-6.col-lg-4
-              %h2 Heading
-              %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-              %p
-                %a.btn.btn-default{:href => "#"} View details »
-            / /span
-            .col-6.col-sm-6.col-lg-4
-              %h2 Heading
-              %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-              %p
-                %a.btn.btn-default{:href => "#"} View details »
-            / /span
-            .col-6.col-sm-6.col-lg-4
-              %h2 Heading
-              %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-              %p
-                %a.btn.btn-default{:href => "#"} View details »
-            / /span
-            .col-6.col-sm-6.col-lg-4
-              %h2 Heading
-              %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-              %p
-                %a.btn.btn-default{:href => "#"} View details »
-            / /span
-          / /row
+          = yield
         / /span
       / /row
       %hr/
